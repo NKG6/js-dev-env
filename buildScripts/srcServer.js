@@ -19,9 +19,10 @@ res.sendFile(path.join(__dirname,'../src/index.html'))
 
 });
 
+/* eslint-disable no-console */
 app.listen(port, function(err){
   if(err){
-    Console.log(err);
+    console.log(err);
   }
   else{
     open('http://localhost:'+ port);
