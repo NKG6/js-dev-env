@@ -9,7 +9,7 @@ it('should pass', ()=>{
 });
 
 
-describe('index.htm',()=>{
+describe('index.html',()=>{
 it('should say Index', (done)=>{
   const index = fs.readFileSync('./src/index.html' , "utf-8");
   jsdom.env(index , function(err, window){
